@@ -1,0 +1,6 @@
+Browse your soundcloud favorites faster!
+
+Try it here: http://sc-favorites.herokuapp.com/
+
+TODO:
+playlists

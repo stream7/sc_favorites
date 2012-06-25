@@ -1,0 +1,81 @@
+@import "bootstrap";
+
+#followings, #results {
+  float: left;
+  height: 500px; 
+  overflow: auto;
+}
+
+#followings {
+  margin-left: 0;
+}
+
+#avatar {
+  min-height: 110px;
+  margin-top: 10px;
+}
+
+.following, .track {
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+.following-details {
+  margin: 20px;
+}
+
+.track-details {
+  margin: 0 0 0 20px;
+}
+
+#user-links {
+  margin: 40px;
+}
+
+#widget-controls {
+  margin: 40px 0;
+}
+
+.track-description {
+  width: 300px;
+}
+
+.more {
+  width: 64px;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn-group {
+  float: left;
+}
+
+#credits {
+  float: right;
+}
+
+h1 {
+  margin-top: 200px;
+  font-family:  helvetica, sans-serif;
+  color: white;
+  font-size: 114px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 
+  #ff5300 1px 1px 0, 
+  #ff5300 2px 2px 0, 
+  #ff5300 3px 3px 0, 
+  #ff5300 4px 4px 0, 
+  #ff5300 5px 5px 0, 5px 8px 10px 
+  rgba(0, 0, 0, .35);
+
+}
+
+#connect {
+  margin: 50px 10px;
+}
+
+p.info {
+  margin: 40px 0 0 10px;
+}

@@ -1,0 +1,17 @@
+<div class="following-avatar pull-left">
+  <a href="<%= user.permalink_url %>" target="_blank">
+    <img alt="<%= user.permalink %>" src="<%= user.avatar_url %>" />
+  </a>
+</div>
+<div class="following-details pull-left">
+  <p><a href="<%= user.permalink_url %>" target="_blank"><%= user.username %></a></p>
+  <div class="btn-group">
+    <a class="tracks btn" href="#">T <sup>(<%= user.track_count %>)</sup></a>
+    <a class="play-tracks btn" href="#"><i class="icon-play"></i></a>
+  </div>
+  <div class="btn-group">
+    <a class="favorites btn" href="#">F <sup>(<%= user.public_favorites_count %>)</sup></a>
+    <a class="play-favorites btn" href="#"><i class="icon-play"></i></a>
+  </div>
+  
+</div>

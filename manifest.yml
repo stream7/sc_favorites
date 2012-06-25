@@ -1,0 +1,18 @@
+---
+applications:
+  .:
+    name: SCFavorites
+    framework:
+      name: rails3
+      info:
+        mem: 256M
+        description: Rails Application
+        exec: 
+    url: ${name}.${target-base}
+    mem: 256M
+    instances: 1
+    services:
+      mysqlcollector:
+        type: mysql
+      mysql-72861:
+        type: mysql

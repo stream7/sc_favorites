@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soundcloud favorites</title>
+  <meta content="An alternative way to browse your soundcloud favorites" name="description">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <script src="http://connect.soundcloud.com/sdk.js"></script>
+  <script src="http://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "ur-13a68ddb-2626-bae4-845-31e3e47daff5"}); </script>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32917911-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div id="credits">
+      <span class='st_facebook_hcount' displayText='Facebook'></span>
+      <span class='st_twitter_hcount' displayText='Tweet'></span>
+      <span class='st_pinterest_hcount' displayText='Pinterest'></span>
+      <span class='st_fblike_hcount' displayText='Facebook Like'></span>
+      <span class='st_twitterfollow_hcount' displayText='Twitter ni_ger' st_username='ni_ger'></span>
+    </div>
+    <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+  </div>
+  
+<%= yield %>
+
+</body>
+</html>

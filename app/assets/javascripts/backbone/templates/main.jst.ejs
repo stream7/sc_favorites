@@ -1,0 +1,36 @@
+<div id="avatar" class="clearfix">
+  <div id="avatar-wrapper" class="pull-left">
+    <a href="<%= user.permalink_url %>" target="_blank">
+      <img alt="<%= user.permalink %>" src="<%= user.avatar_url %>" />
+    </a>
+  </div>
+  <div id="user-links" class="pull-left">
+    <div class="btn-group">
+      <a id="user-favorites" class="btn" href="#">My favorites</a>
+      <a id="user-play-favorites" class="btn" href="#"><i class="icon-play"></i></a>
+    </div>
+
+    <div class="btn-group">
+      <a id="user-tracks" class="btn" href="#">My tracks</a>
+      <a id="user-play-tracks" class="btn" href="#"><i class="icon-play"></i></a>
+    </div>
+  </div>
+  <div id="widget-controls" class="hide pull-left">
+    <div class="btn-group">
+      <a id="widget-prev" class="btn" href="#"><i class="icon-step-backward"></i></a>
+      <a id="widget-next" class="btn" href="#"><i class="icon-step-forward"></i></a>
+    </div>
+  </div>
+
+  
+
+
+</div>
+<div id="widget">
+  <iframe id="sc-widget" width="100%" height="166" scrolling="no" frameborder="no" src=""></iframe>
+</div>
+<div id="followings" class="span5 well">
+</div>
+<div id="results" class="span6 well">
+  <p>Select the tracks or the favorites of one of your followings to view the tracks here.</p>
+</div>

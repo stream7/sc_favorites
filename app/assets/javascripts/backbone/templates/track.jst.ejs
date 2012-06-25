@@ -1,0 +1,16 @@
+<div class="track-avatar pull-left">
+  <a href="<%= track.permalink_url %>" target="_blank" class="artwork">
+    <% if (track.artwork_url) { %>
+      <img alt="<%= track.title %>" src="<%= track.artwork_url %>" />
+    <% } else { %>
+      <img alt="No image" src="/assets/soundcloud-logo-sc.png" />
+    <% } %>
+  </a>
+</div>
+<div class="track-details pull-left">
+  <p class="track-description"><a href="<%= track.permalink_url %>" target="_blank"><%= track.title %></a> [~ <%= parseInt(track.duration / 60 / 1000, 10) %>min]</p>
+  <p class="track-user">
+    by <a href="<%= track.user.permalink_url %>" target="_blank"><%= track.user.username %></a> on <%= track.created_at.slice(0,10) %>
+  </p>
+  <a href="#" class="play btn btn-primary">Play</a>
+</div>
